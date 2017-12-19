@@ -1,0 +1,96 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0 auto;
+	background-color: black;
+/* 	position: relative; */
+}
+
+.block {
+	text-align: center;
+	height: 4000px;
+	widows: 980px;
+	margin: 0 calc((100% - 980px) / 2);
+}
+
+.mainblock {
+	height: 10000px;
+	width: 980px;
+	border: 0.1px solid white;	
+}
+
+.moveloinerl {
+	height: 949px;
+	width: 980px;
+}
+
+.moveloinerl2 {
+	height: 949px;
+	width: 980px;
+}
+
+.Linerl {
+	height: 350px;
+	width: 350px;
+	margin: 70px 0 0 350px;
+	border-left: 2px solid green;
+	transform: rotateZ(45deg);
+/* 	position: absolute;
+left: 50%;
+top: 100px; */
+
+}
+
+.bigblock {
+	height: 260px;
+	width: 260px;
+	margin: -210px 0 0 180px;
+	border: 2px solid green;
+	transform: rotateZ(45deg);
+	display: inline-block;
+/* 	position: absolute;
+left: 50%;
+top: 100px; */
+
+}
+
+.bigblocktext {
+	height: 260px;
+	width: 260px;
+	margin: -210px 0 0 180px;
+	border: 2px solid green;
+	display: inline-block;
+	color: green;
+	backface-visibility: hidden;
+/* 	position: absolute;
+left: 50%;
+top: 100px; */
+
+}
+
+.bigblockarrow {
+	height: 260px;
+	width: 260px;
+	margin: -210px 0 0 180px;
+	border-right: 2px solid green;
+	border-top: 2px solid green;
+	transform: rotateZ(45deg);
+	display: inline-block;
+/* 	position: absolute;
+left: 50%;
+top: 100px; */
+
+}
+.smallblock {
+	height: 106px;
+	width: 106px;
+	margin: 75px 0 0 257px;
+	border: 2px solid green;
+	transform: rotateZ(45deg);
+/* 	position: absolute;
+left: 50%;
+top: 100px; */
+
+}
