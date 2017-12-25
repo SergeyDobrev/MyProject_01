@@ -5,92 +5,170 @@ html, body {
 body {
 	margin: 0 auto;
 	background-color: black;
-/* 	position: relative; */
 }
 
-.block {
-	text-align: center;
+button {
+	color: green;
+	background-color: black;
+	border: 2px solid green;
+	display: block;
+}
+
+a {
+    outline: none; 
+    text-decoration: none; 
+}
+
+
+.button_box {
+	position: fixed;
+	top: 0;
+}
+
+.main {
 	height: 4000px;
 	widows: 980px;
 	margin: 0 calc((100% - 980px) / 2);
+/* 		border: 1px solid red; */
 }
 
-.mainblock {
-	height: 10000px;
+.Level1 {
+	height: 860px;
 	width: 980px;
-	border: 0.1px solid white;	
+
 }
 
-.moveloinerl {
-	height: 949px;
-	width: 980px;
-}
-
-.moveloinerl2 {
-	height: 949px;
+.Level1fonblock1 {
+	height: 250px;
 	width: 980px;
 }
 
-.Linerl {
+.Level1moveblock1 {
+	height: 250px;
+	width: 980px;
+}
+
+.Line1 {
 	height: 350px;
 	width: 350px;
 	margin: 70px 0 0 350px;
 	border-left: 2px solid green;
 	transform: rotateZ(45deg);
-/* 	position: absolute;
-left: 50%;
-top: 100px; */
-
 }
 
-.bigblock {
+.Level1fonblock2 {
+	height: 550px;
+	width: 980px;
+	position: absolute;
+	top: 150px;
+}
+
+.Level1moveblock2 {
+	height: 550px;
+	width: 980px;
+}
+
+.bigbox {
 	height: 260px;
 	width: 260px;
-	margin: -210px 0 0 180px;
-	border: 2px solid green;
+	margin: 60px 0 0 210px;
+	border: 3px solid green;
 	transform: rotateZ(45deg);
 	display: inline-block;
-/* 	position: absolute;
-left: 50%;
-top: 100px; */
+}
 
+.numberbox {
+	height: 180px;
+	width: 180px;
+	margin: 40px auto;
+	border: 1px solid green;
+	transform: rotateZ(-45deg);
+}
+
+.numberbox11 {
+	height: 12px;
+	width: 12px;
+	padding: 2px;
+	background-color: green;
+	display: inline-block;
+}
+
+.smallbox {
+	height: 106px;
+	width: 106px;
+	margin: 73px 0 0 287px;
+	border: 3px solid green;
+	transform: rotateZ(45deg);
+	color: green;
+	background-color: black;
+}
+
+.smalltextbox {
+	height: 106px;
+	width: 106px;
+	margin: 15px;
+	transform: rotateZ(-45deg);
+	color: green;
+	font-size: 28px;
+	line-height: 35px;
+	text-align: center;
+	font-family: Courier;
+	font-weight: bold;
+}
+
+.Level1fonblock3 {
+	height: 550px;
+	width: 320px;
+	margin-left: 650px;
+	position: absolute;
+	top: 150px;
+}
+
+.Level1moveblock3 {
+	height: 550px;
+	width: 320px;
+}
+
+.arrow3 {
+	height: 260px;
+	width: 260px;
+	margin: 60px 0 0 0;
+	border-top: 3px solid green;
+	border-right: 3px solid green;
+	transform: rotateZ(45deg);
+	display: inline-block;
 }
 
 .bigblocktext {
-	height: 260px;
-	width: 260px;
-	margin: -210px 0 0 180px;
-	border: 2px solid green;
+	height: 360px;
+	width: 400px;
+	margin: -160px 0 0 550px;
 	display: inline-block;
 	color: green;
 	backface-visibility: hidden;
-/* 	position: absolute;
-left: 50%;
-top: 100px; */
-
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 360px;
 }
 
-.bigblockarrow {
-	height: 260px;
-	width: 260px;
-	margin: -210px 0 0 180px;
-	border-right: 2px solid green;
-	border-top: 2px solid green;
-	transform: rotateZ(45deg);
-	display: inline-block;
-/* 	position: absolute;
-left: 50%;
-top: 100px; */
-
+.Level1fonblock4 {
+	height: 580px;
+	width: 980px;
+	position: absolute;
+	top: 280px;
+	z-index: -1;
 }
-.smallblock {
-	height: 106px;
-	width: 106px;
-	margin: 75px 0 0 257px;
-	border: 2px solid green;
-	transform: rotateZ(45deg);
-/* 	position: absolute;
-left: 50%;
-top: 100px; */
 
+.Level1moveblock4 {
+	height: 580px;
+	width: 980px;
+}
+
+.Line2 {
+	height: 680px;
+	width: 0;
+	margin: 0 0 0 350px;
+	border-left: 2px solid green;
+	transform: rotateZ(-45deg);
 }
