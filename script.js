@@ -85,6 +85,7 @@ function myfun1() {
 
 function myfun2() {
 	$('#index3').slideUp(2000);
+	$('#index7').slideUp(2000);	
 }
 
 
@@ -111,18 +112,25 @@ function myfun5() {
 
 function myfun6() {
 	$('#index2').slideDown(3000);
-	$('#index21').fadeIn(4000);	
-	$('#index23').fadeIn(2000);	
-	$('#index24').fadeIn(2000);
-	$('#index25').fadeIn(2000);
-	$('#index26').fadeIn(2000);
 
 	$('#index3').slideDown(2000);	
+	$('#index7').slideDown(2000);	
 }
 
 function myfun7() {
+	$('#index21').fadeIn(3000);	
+	$('#index23').fadeIn(3000);	
+	$('#index24').fadeIn(3000);
+	$('#index25').fadeIn(3000);
+	$('#index26').fadeIn(3000);
+
+}
+
+function myfun71() {
 	$('#index4').slideDown(3000);
 }
+
+
 
 function myfun8() {
 	$('#index5').slideDown(3000);
@@ -130,6 +138,7 @@ function myfun8() {
 
 function myfun9() {
 	var obj = document.querySelector('#index6');
-	$('#index6').animate({"rotateZ": "180deg"}, 3000);
+
+	$('#index11').css({"color": "red"});
 }
 

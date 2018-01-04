@@ -26,16 +26,16 @@ a {
 }
 
 .main {
-	height: 4000px;
+	height: 4040px;
 	widows: 980px;
 	margin: 0 calc((100% - 980px) / 2);
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .Level1 {
-	height: 860px;
+	height: 1010px;
 	width: 980px;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 }
 
 .Level1fonblock1 {
@@ -51,19 +51,29 @@ a {
 .Line1 {
 	height: 350px;
 	width: 350px;
-	margin: 70px 0 0 250px;
+	margin: 0 0 0 250px;
 	border-left: 2px solid green;
-	transform: rotateZ(45deg);
+	transform: translateY(70px) rotateZ(45deg) ;
 }
 
 .Level1fonblock2 {
 	height: 550px;
 	width: 980px;
-	position: absolute;
-	top: 150px;
+	margin-top: -105px;
 }
 
 .Level1moveblock2 {
+	height: 550px;
+	width: 980px;
+}
+
+.Level1fonblock3 {
+	height: 550px;
+	width: 980px;
+	margin-top: -535px;
+}
+
+.Level1moveblock3 {
 	height: 550px;
 	width: 980px;
 }
@@ -75,14 +85,13 @@ a {
 	border: 3px solid green;
 	transform: rotateZ(45deg);
 	display: inline-block;
+	vertical-align: top;
 }
 
 .numberbox {
 	height: 170px;
 	width: 200px;
 	margin: 50px auto;
-	/* 	padding: 10px; */
-	/* border: 1px solid green; */
 	transform: rotateZ(-45deg);
 }
 
@@ -108,10 +117,7 @@ a {
 .smallbox:hover {
 	background-color: green;
 	background-image:
-    linear-gradient(-45deg, 
-    	rgb(0,75,0), 
-     	black 
-    	);
+    linear-gradient(-45deg, rgb(0,75,0), black);
 }
 
 .smalltextbox {
@@ -127,6 +133,19 @@ a {
 	font-weight: bold;
 }
 
+.bigblocktext {
+	height: 360px;
+	width: 400px;
+	margin: 0 0 0 460px;
+	display: inline-block;
+	color: green;
+	backface-visibility: hidden;
+	font-family: Courier;
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 360px;
+}
+
 .infotextbox1 {
 	height: 20px;
 	width: 600px;
@@ -135,8 +154,6 @@ a {
 	line-height: 20px;
 	font-family: Courier;
 	font-weight: bold;
-	/* border: 1px solid green; */
-	/* position: absolute; */
 }
 
 .infotextbox11 {
@@ -155,43 +172,31 @@ a {
 	margin: 5px 0 0 310px;
 }
 
-.Level1fonblock3 {
+
+.Level1fonblock4 {
 	height: 550px;
-	width: 320px;
-	margin-left: 650px;
-	position: absolute;
-	top: 150px;
+	width: 980px;
+	margin-top: -550px;
+
 }
 
-.Level1moveblock3 {
+.Level1moveblock4 {
 	height: 550px;
-	width: 320px;
+	width: 980px;
 }
 
 .arrow3 {
 	height: 260px;
 	width: 260px;
-	margin: 60px 0 0 0;
+	margin-top: 60px;
 	border-top: 3px solid green;
 	border-right: 3px solid green;
-	transform: rotateZ(45deg);
+	transform: translateX(650px) rotateZ(45deg) ;
 	display: inline-block;
 }
 
-.bigblocktext {
-	height: 360px;
-	width: 400px;
-	margin: -160px 0 0 460px;
-	display: inline-block;
-	color: green;
-	backface-visibility: hidden;
-	font-family: Courier;
-	font-weight: bold;
-	font-size: 100px;
-	line-height: 360px;
-}
 
-.Level1fonblock4 {
+.Level1fonblock5 {
 	height: 580px;
 	width: 980px;
 	position: absolute;
@@ -199,7 +204,7 @@ a {
 	z-index: -1;
 }
 
-.Level1moveblock4 {
+.Level1moveblock5 {
 	height: 580px;
 	width: 980px;
 }
@@ -212,14 +217,13 @@ a {
 	transform: rotateZ(-45deg);
 }
 
-.Level1fonblock5 {
+.Level1fonblock6 {
 	height: 200px;
 	width: 980px;
-	/* border: 1px solid red; */
-	margin: 300px auto;
+	margin-top: 104px;
 }
 
-.Level1moveblock5 {
+.Level1moveblock6 {
 	height: 200px;
 	width: 980px;
 	position: relative;
@@ -274,8 +278,7 @@ a {
 }
 
 .Level2 {
-	height: 860px;
+	height: 1010px;
 	width: 980px;
-		border: 1px solid yellow;
 
 }
