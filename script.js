@@ -1,15 +1,19 @@
-		myfun41()
-		myfun1()
-		myfun2()
-		myfun3()
-		myfun4()
+close01();
+close02();
+close03();
+close04();
+myfun1();
+myfun2();
 
 
+// open01();
+// open02();
 
-window.onscroll = function() {
+
+/*window.onscroll = function() {
 
 
-var obj = document.querySelector('.Level1')
+var obj = document.querySelector('.level1')
 var elemRect = obj.getBoundingClientRect();
 console.log(elemRect.top);
 		if (elemRect.top < -100) {
@@ -41,7 +45,7 @@ console.log(elemRect.top);
 		} 
 
 
-}
+}*/
 
 
 var numBlocksArray = new Array;
@@ -89,42 +93,15 @@ function myfun2() {
 }
 
 
-function myfun3() {
-	$('#index2').slideUp(3000);
-	$('#index21').fadeOut(4000);
-	$('#index23').fadeOut(2000);	
-	$('#index24').fadeOut(2000);
-	$('#index25').fadeOut(2000);
-	$('#index26').fadeOut(2000);	
-}
 
-function myfun4() {
-	$('#index1').slideUp(2000);
-}
-
-function myfun41() {
-	$('#index5').slideUp(2000);
-}
-
-function myfun5() {
-	$('#index1').slideDown(2000);
-}
 
 function myfun6() {
-	$('#index2').slideDown(3000);
+//	$('#index2').slideDown(3000);
 
 	$('#index3').slideDown(2000);	
 	$('#index7').slideDown(2000);	
 }
 
-function myfun7() {
-	$('#index21').fadeIn(3000);	
-	$('#index23').fadeIn(3000);	
-	$('#index24').fadeIn(3000);
-	$('#index25').fadeIn(3000);
-	$('#index26').fadeIn(3000);
-
-}
 
 function myfun71() {
 	$('#index4').slideDown(3000);
@@ -132,12 +109,48 @@ function myfun71() {
 
 
 
-function myfun8() {
-	$('#index5').slideDown(3000);
+function open01() {
+	$('#mindex1').slideDown(3000);
+}
+
+function close01() {
+	$('#mindex1').slideUp(2000);
+}
+
+function open02() {
+	$('#mindex2').slideDown(2000);
+}
+
+function close02() {
+	$('#mindex2').slideUp(2000);
+}
+
+function open03() {
+	$('#mindex3').slideDown(2000);
+}
+
+function close03() {
+	$('#mindex3').slideUp(2000);
+}
+
+function open04() {
+	$('#mindex41').fadeIn(3000);	
+	$('#mindex43').fadeIn(3000);	
+	$('#mindex44').fadeIn(3000);
+	$('#mindex45').fadeIn(3000);
+	$('#mindex46').fadeIn(3000);
+}
+
+function close04() {
+	$('#mindex41').fadeOut(4000);
+	$('#mindex43').fadeOut(2000);	
+	$('#mindex44').fadeOut(2000);
+	$('#mindex45').fadeOut(2000);
+	$('#mindex46').fadeOut(2000);	
 }
 
 function myfun9() {
-	var obj = document.querySelector('#index6');
+	var obj = document.querySelector('#mindex2');
 
 	$('#index11').css({"color": "red"});
 }

@@ -25,6 +25,14 @@ a {
 	top: 0;
 }
 
+.topmemu {
+	height: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	background-color: rgba(0,150,0,0.1);
+}
 .main {
 	height: 4040px;
 	widows: 980px;
@@ -32,48 +40,60 @@ a {
 	/* border: 1px solid red; */
 }
 
-.Level1 {
+.level1 {
 	height: 1010px;
 	width: 980px;
 	/* border: 1px solid blue; */
 }
 
-.Level1fonblock1 {
+.level11 {
+	height: 195px;
+	width: 980px;
+	margin-top: -40px;
+}
+
+.level11m {
+	height: 195px;
+	width: 980px;
+	position: relative;
+}
+
+.level12 {
 	height: 250px;
 	width: 980px;
 }
 
-.Level1moveblock1 {
+.level12m {
 	height: 250px;
 	width: 980px;
 }
 
-.Line1 {
+.line1 {
 	height: 350px;
 	width: 350px;
-	margin: 0 0 0 250px;
+	margin: 0 0 0 314px;
 	border-left: 2px solid green;
-	transform: translateY(70px) rotateZ(45deg) ;
+	transform: translateY(75px) rotateZ(45deg) ;
 }
 
-.Level1fonblock2 {
+.level13 {
 	height: 550px;
 	width: 980px;
-	margin-top: -105px;
+	margin-top: -7px;
 }
 
-.Level1moveblock2 {
+.level13m {
 	height: 550px;
 	width: 980px;
 }
 
-.Level1fonblock3 {
+.level14 {
 	height: 550px;
 	width: 980px;
 	margin-top: -535px;
 }
 
-.Level1moveblock3 {
+.level14m {
 	height: 550px;
 	width: 980px;
 }
@@ -82,7 +102,7 @@ a {
 	height: 260px;
 	width: 260px;
 	margin: 60px 0 0 110px;
-	border: 3px solid green;
+	border: 2px solid green;
 	transform: rotateZ(45deg);
 	display: inline-block;
 	vertical-align: top;
@@ -108,7 +128,7 @@ a {
 	height: 106px;
 	width: 106px;
 	margin: 73px 0 0 187px;
-	border: 3px solid green;
+	border: 2px solid green;
 	transform: rotateZ(45deg);
 	color: green;
 	background-color: black;
@@ -189,8 +209,8 @@ a {
 	height: 260px;
 	width: 260px;
 	margin-top: 60px;
-	border-top: 3px solid green;
-	border-right: 3px solid green;
+	border-top: 2px solid green;
+	border-right: 2px solid green;
 	transform: translateX(650px) rotateZ(45deg) ;
 	display: inline-block;
 }
@@ -215,18 +235,6 @@ a {
 	margin: 0 0 0 250px;
 	border-left: 2px solid green;
 	transform: rotateZ(-45deg);
-}
-
-.Level1fonblock6 {
-	height: 200px;
-	width: 980px;
-	margin-top: 104px;
-}
-
-.Level1moveblock6 {
-	height: 200px;
-	width: 980px;
-	position: relative;
 }
 
 .rotateblock {

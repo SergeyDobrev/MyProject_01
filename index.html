@@ -9,14 +9,21 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<div class="button_box">
 	
-		<button onclick="myfun41()">0 уровень</button>
-		<button onclick="myfun1()">1 уровень</button>
-		<button onclick="myfun2()">2 уровень</button>
-		<button onclick="myfun3()">3 уровень</button>
-		<button onclick="myfun4()">4 уровень</button>
+		<button onclick="open01()">1 уровень</button>
+		<button onclick="open02()">2 уровень</button>
+		<button onclick="open03()">3 уровень</button>
+		<button onclick="open04()">4 уровень</button>
+		<button onclick="createNumBlocks2()">5 уровень</button>
+		<button onclick="createNumBlocks2()">5 уровень</button>
 
 		<br>
-		<button onclick="myfun5()">5 уровень</button>
+<!-- 		<button onclick="myfun5()">5 уровень</button> -->
+
+		<button onclick="close01()">0 уровень</button>
+		<button onclick="close02()">1 уровень</button>
+		<button onclick="close03()">2 уровень</button>
+		<button onclick="close04()">2 уровень</button>
+
 		<button onclick="myfun6()">6 уровень</button>
 		<button onclick="myfun7()">8 уровень</button>
 		<button onclick="createNumBlocks2()">7+ уровень</button>
@@ -29,15 +36,29 @@
 		
 	</div>
 	<div class="main">
-		<div class="Level1">
-			<div class="Level1fonblock1">
-				<div class="Level1moveblock1" id="index1">
-					<div class="Line1"></div>
+		<div class="topmemu">M E N U</div>
+		<div class="level1">
+			<div class="level11">
+				<div class="level11m" id="mindex1">
+					<div class="rotateblock" id="mindex12">
+						<div class="side front" id="mindex13">01</div>
+						<div class="side back">02</div>
+						<div class="side left"></div>
+						<div class="side right"></div>
+						<div class="side top"></div>
+						<div class="side bottom"></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="Level1fonblock2">
-				<div class="Level1moveblock2" id="index2">
+			<div class="level12">
+				<div class="level12m" id="mindex2">
+					<div class="line1"></div>
+				</div>
+			</div>
+
+			<div class="level13">
+				<div class="level13m" id="mindex3">
 					<div class="bigbox">
 						<div class="numberbox" id="numberbox1">
 							
@@ -53,13 +74,13 @@
 				</div>
 			</div>
 
-			<div class="Level1fonblock3">
-				<div class="Level1moveblock3" id="index3">
-					<div class="bigblocktext" id="index21">Level_0</div>
-					<div class="infotextbox1 infotextbox11" id="index23">in the first section,</div>
-					<div class="infotextbox1 infotextbox12" id="index24">something very interesting </div>
-					<div class="infotextbox1 infotextbox13" id="index25">is described, here the content </div>
-					<div class="infotextbox1 infotextbox14" id="index26">of the first level_0 on this site</div>
+			<div class="level14">
+				<div class="level14m" id="mindex4">
+					<div class="bigblocktext" id="mindex41">Level_0</div>
+					<div class="infotextbox1 infotextbox11" id="mindex43">in the first section,</div>
+					<div class="infotextbox1 infotextbox12" id="mindex44">something very interesting </div>
+					<div class="infotextbox1 infotextbox13" id="mindex45">is described, here the content </div>
+					<div class="infotextbox1 infotextbox14" id="mindex46">of the first level_0 on this site</div>
 				</div>
 			</div>
 			
@@ -75,19 +96,8 @@
 				</div>
 			</div>
 
-			<div class="Level1fonblock6">
-				<div class="Level1moveblock6" id="index5">
-					<div class="rotateblock" id="index6">
-						<div class="side front" id="index11">01</div>
-						<div class="side back">02</div>
-						<div class="side left"></div>
-						<div class="side right"></div>
-						<div class="side top"></div>
-						<div class="side bottom"></div>
-					</div>
-				</div>
-			</div>
 		</div>
+
 		<div class="Level2"></div>
 
 	<script type="text/javascript" src="script.js"></script>
