@@ -3,27 +3,49 @@ var TimerId1  = null;
 var TimerId2  = null;
 var TimerId3  = null;
 
-var numBlocksArrayData = [  0, 28, 56, 84,112,140, 28, 56, 84, 112,
-						    28,  0, 28, 56, 84,112,140,140,140];
-var numBlocksArrayData1 = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
-						   112,140,140,140,140,140,140,112,168];
-var numBlocksArrayData2 = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
-						   112,140,140,140,140,140,140,112,168];
-var numBlocksArrayData3 = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
-						   112,140,140,140,140,140,140,112,168];
+var numBlocksArrayData1x = [  0, 28, 56, 84,112,140, 28, 56, 84,112,
+					 	     28,  0, 28, 56, 84,112,140,140,140];
+var numBlocksArrayData1y = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
+						    112,140,140,140,140,140,140,112,168];
+
+var numBlocksArrayData2x = [  0, 28, 56, 84,112,140, 28, 56, 84,112,
+						     28,  0, 28, 56, 84,112,140,140,140];
+var numBlocksArrayData2y = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
+						    112,140,168,168,140,112,112,140,168];
+
+var numBlocksArrayData3x = [  0, 28, 56, 84,112,140, 28, 56, 84,112,
+						      0,  0,  0, 28, 56, 84,112,140,112];
+var numBlocksArrayData3y = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
+						    112,140,168,168,140,168,168,140,112];
+
+var numBlocksArrayData4x = [  0, 28, 56, 84,112,140, 28, 56, 84,112,
+						     28, 56, 84, 84,  0, 28, 56, 84,112,140];
+var numBlocksArrayData4y = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
+						    140,112,112,140,168,168,168,168,168,168];
+
+var numBlocksArrayData5x = [  0, 28, 56, 84,112,140, 28, 56, 84,112,
+						      0, 28, 56, 56,  0, 28, 56, 84,112,140];
+var numBlocksArrayData5y = [ 28,  0,  0,  0,  0, 28, 56, 56, 56, 56,
+						    112,112,112,140,168,168,168,168,168,168];
+
+
 
 var numBlocksArray1 = new Array;
-crNumBlocks(numBlocksArray1, numBlocksArrayData1, '#numberbox1');
+crNumBlocks(numBlocksArray1, numBlocksArrayData1x, numBlocksArrayData1y, '#numberbox1');
 
 var numBlocksArray2 = new Array;
-crNumBlocks(numBlocksArray2, numBlocksArrayData2, '#numberbox2');
+crNumBlocks(numBlocksArray2, numBlocksArrayData2x, numBlocksArrayData2y, '#numberbox2');
 
 var numBlocksArray3 = new Array;
-crNumBlocks(numBlocksArray3, numBlocksArrayData3, '#numberbox3');
+crNumBlocks(numBlocksArray3, numBlocksArrayData3x, numBlocksArrayData3y, '#numberbox3');
 
-function crNumBlocks(ar, nbad, bid) {
+var numBlocksArray4 = new Array;
+crNumBlocks(numBlocksArray4, numBlocksArrayData4x, numBlocksArrayData4y, '#numberbox4');
 
-	for (var i = 0; i < nbad.length; i++) {
+
+function crNumBlocks(ar, nbadx, nbady, bid) {
+
+	for (var i = 0; i < nbadx.length; i++) {
 
 		ar[i] = document.createElement("div");
 		$(bid).append(ar[i]);
@@ -35,7 +57,7 @@ function crNumBlocks(ar, nbad, bid) {
 		else if (i % 4 === 2) {var a = (c + 50); var b =  (c + 50) * (-1)}
 		else if (i % 4 === 3) {var a = (c + 50); var b =  (c + 50)}
 
-		$(ar[i]).css({"top": numBlocksArrayData[i] + a + "px", "left": nbad[i] + b + "px"});
+		$(ar[i]).css({"top": nbadx[i] + a + "px", "left": nbady[i] + b + "px"});
 	}
 }
 
@@ -43,23 +65,29 @@ open01('#mindex1');
 setTimeout(rotate01, 2000, '#mrotate01');
 setTimeout(open02, 3000, '#mindex2');
 setTimeout(open03, 5000, '#mindex3', '#mindex4', '#mindex5');
-setTimeout(open05, 7000, numBlocksArray1, numBlocksArrayData1);
+setTimeout(open05, 7000, numBlocksArray1, numBlocksArrayData1x, numBlocksArrayData1y);
 setTimeout(open07, 8000, '#mindex6');
 
 setTimeout(open01, 11000, '#mindex12');
 setTimeout(rotate01, 13000, '#mrotate02');
 setTimeout(open02, 15000, '#mindex22');
 setTimeout(open03, 17000, '#mindex32', '#mindex42', '#mindex52');
-setTimeout(open05, 18000, numBlocksArray2, numBlocksArrayData2);
+setTimeout(open05, 18000, numBlocksArray2, numBlocksArrayData2x, numBlocksArrayData2y);
 setTimeout(open07, 19000, '#mindex62');
 
 setTimeout(open01, 20000, '#mindex13');
 setTimeout(rotate01, 22000, '#mrotate03');
 setTimeout(open02, 24000, '#mindex23');
 setTimeout(open03, 26000, '#mindex33', '#mindex43', '#mindex53');
-setTimeout(open05, 27000, numBlocksArray3, numBlocksArrayData3);
+setTimeout(open05, 27000, numBlocksArray3, numBlocksArrayData3x, numBlocksArrayData3y);
 setTimeout(open07, 28000, '#mindex63');
 
+setTimeout(open01, 30000, '#mindex14');
+setTimeout(rotate01, 32000, '#mrotate04');
+setTimeout(open02, 34000, '#mindex24');
+setTimeout(open03, 36000, '#mindex34', '#mindex44', '#mindex54');
+setTimeout(open05, 37000, numBlocksArray4, numBlocksArrayData4x, numBlocksArrayData4y);
+setTimeout(open07, 38000, '#mindex64	');
 
 /*window.onscroll = function() {
 
@@ -131,10 +159,9 @@ function close03() {
 	$('#mindex5').slideUp();
 }
 
-function open05(ar, nbad) {
+function open05(ar, nbadx, nbady) {
 	for (var i = 0; i < ar.length; i++) {
-		$(ar[i]).fadeIn().animate({"top": numBlocksArrayData[i] + "px",
-									  "left": nbad[i] + "px" }, {queue:false});
+		$(ar[i]).fadeIn().animate({"top": nbadx[i] + "px", "left": nbady[i] + "px" }, {queue:false});
 	}
 }
 

@@ -67,6 +67,11 @@ a {
 	margin-top: 266px;
 }
 
+.level124 {
+	margin-top: 396px;
+}
+
+
 .level12m {
 	height: 250px;
 	width: 980px;
@@ -252,6 +257,10 @@ a {
 	top: 2780px;
 }
 
+.level164 {
+	top: 3880px;
+}
+
 .line2 {
 	height: 680px;
 	width: 0;
@@ -276,6 +285,10 @@ a {
 
 .rotateblock3 {
 	top: 330px;
+}
+
+.rotateblock4 {
+	top: 460px;
 }
 
 
