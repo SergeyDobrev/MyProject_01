@@ -8,30 +8,65 @@ body {
 }
 
 a {
-    outline: none; 
-    text-decoration: none; 
+/*     outline: none; 
+text-decoration: none;  */
+	font-family: Courier;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	color: rgba(0,255,0,0.8);
+}
+
+nav {
+	height: 50px;
+}
+
+.menu {
+	list-style-type: none;
+
+}
+
+.menu li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+.menu li a:hover, 
+.menu li a:focus {
+/* 	background-color: green; */
+    color: gold;
+   	font-weight: normal;
+	text-decoration: none;
+/* 	background-image:
+    linear-gradient(-45deg, rgb(0,75,0), black); */
 }
 
 .topmemu {
 	height: 50px;
 	width: 100%;
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 50px;
+	margin-top: -10px;
 	text-align: center;
-	background-color: rgba(0,255,0,0.1);
-	color: rgba(0,255,0,0.2);
-
+	background-color: rgba(0,255,0,0.2);
+	position: fixed;
+	z-index: 5;
 }
+
 .main {
 	height: 4040px;
 	widows: 980px;
 	margin: 0 calc((100% - 980px) / 2);
+	margin-top: 50px;
 	/* border: 1px solid red; */
 }
 
-.level1 {
+.block {
 	height: 1010px;
+	width: 980px;
+	/* border: 1px solid blue; */
+}
+
+.blockend {
+	height: 700px;
 	width: 980px;
 	/* border: 1px solid blue; */
 }
@@ -71,6 +106,23 @@ a {
 	margin-top: 396px;
 }
 
+.level125 {
+	margin-top: 526px;
+}
+
+.level126 {
+	margin-top: 656px;
+}
+
+.level127 {
+	margin-top: 786px;
+}
+
+.level128 {
+	margin-top: 921px;
+	height: 150px;
+	
+}
 
 .level12m {
 	height: 250px;
@@ -261,6 +313,18 @@ a {
 	top: 3880px;
 }
 
+.level165 {
+	top: 4980px;
+}
+
+.level166 {
+	top: 6080px;
+}
+
+.level167 {
+	top: 7180px;
+}
+
 .line2 {
 	height: 680px;
 	width: 0;
@@ -269,10 +333,17 @@ a {
 	transform: rotateZ(-45deg);
 }
 
+.line3 {
+	height: 150px;
+	width: 0;
+	margin: 0 0 0 490px;
+	border-left: 2px solid green;
+}
+
 .rotateblock {
 	height: 106px;
 	width: 106px;
-		transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	transform: rotateZ(45deg);
 	position: absolute;
 	top: 65px;
@@ -291,6 +362,21 @@ a {
 	top: 460px;
 }
 
+.rotateblock5 {
+	top: 590px;
+}
+
+.rotateblock6 {
+	top: 720px;
+}
+
+.rotateblock7 {
+	top: 850px;
+}
+
+.rotateblock8 {
+	top: 60px;
+}
 
 .side {
 	height: 106px;
@@ -333,14 +419,7 @@ a {
 	transform: rotateX(-90deg) translateZ(53px);
 }
 
-.level2 {
-	height: 1010px;
-	width: 980px;
-
-}
-
-.level3 {
-	height: 1010px;
-	width: 980px;
-
+.rotateside {
+	transform: rotateZ(315deg) translateX(-5px);
+	display: none;
 }
