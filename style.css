@@ -5,11 +5,10 @@ html, body {
 body {
 	margin: 0 auto;
 	background-color: black;
+	background-image: url('fon.png');
 }
 
 a {
-/*     outline: none; 
-text-decoration: none;  */
 	font-family: Courier;
 	font-size: 20px;
 	font-weight: bold;
@@ -28,23 +27,23 @@ nav {
 
 .menu li {
 	display: inline-block;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
 .menu li a:hover, 
 .menu li a:focus {
-/* 	background-color: green; */
+	height: 50px;
     color: gold;
    	font-weight: normal;
 	text-decoration: none;
-/* 	background-image:
-    linear-gradient(-45deg, rgb(0,75,0), black); */
+	outline: none;
+    /* background-image: linear-gradient(-45deg, rgb(0,75,0), black); */
 }
 
 .topmemu {
 	height: 50px;
 	width: 100%;
-	margin-top: -10px;
+	margin-top: -34px;
 	text-align: center;
 	background-color: rgba(0,255,0,0.2);
 	position: fixed;
@@ -55,14 +54,14 @@ nav {
 	height: 4040px;
 	widows: 980px;
 	margin: 0 calc((100% - 980px) / 2);
-	margin-top: 50px;
+	margin-top: 60px;
 	/* border: 1px solid red; */
 }
 
 .block {
-	height: 1010px;
+	height: 1110px;
 	width: 980px;
-	/* border: 1px solid blue; */
+	/* border: 0.1px solid black; */
 }
 
 .blockend {
@@ -71,92 +70,63 @@ nav {
 	/* border: 1px solid blue; */
 }
 
-.level11 {
-	height: 195px;
+.level1 {
+	height: 193px;
 	width: 980px;
-	margin-top: -40px;
+	margin-top: -28px;
 }
 
-.level112 {
-	margin-top: 30px;
-
-}
-
-.level11m {
-	height: 195px;
+.level1m {
+	height: 193px;
 	width: 980px;
 	position: relative;
 	display: none;
 }
 
-.level12 {
+.level2 {
 	height: 250px;
 	width: 980px;
 }
 
-.level122 {
-	margin-top: 135px;
-}
-
-.level123 {
-	margin-top: 266px;
-}
-
-.level124 {
-	margin-top: 396px;
-}
-
-.level125 {
-	margin-top: 526px;
-}
-
-.level126 {
-	margin-top: 656px;
-}
-
-.level127 {
-	margin-top: 786px;
-}
-
 .level128 {
-	margin-top: 921px;
+	margin-top: 15px;
 	height: 150px;
 	
 }
 
-.level12m {
+.level2m {
 	height: 250px;
 	width: 980px;
 	display: none;
 }
 
 .line1 {
-	height: 350px;
-	width: 350px;
-	margin: 0 0 0 314px;
+	height: 360px;
+	width: 0;
+	margin: 0 0 0 364px;
 	border-left: 2px solid green;
-	transform: translateY(75px) rotateZ(45deg) ;
+	transform: translateY(-56px) rotateZ(45deg) ;
 }
 
-.level13 {
+.level3 {
 	height: 550px;
 	width: 980px;
 	margin-top: -7px;
 }
 
-.level13m {
+.level3m {
 	height: 550px;
 	width: 980px;
 	display: none;
 }
 
-.level14 {
+.level4 {
 	height: 550px;
 	width: 980px;
 	margin-top: -535px;
 }
 
-.level14m {
+.level4m {
 	height: 550px;
 	width: 980px;
 	display: none;
@@ -263,14 +233,14 @@ nav {
 }
 
 
-.level15 {
+.level5 {
 	height: 550px;
 	width: 980px;
 	margin-top: -550px;
 
 }
 
-.level15m {
+.level5m {
 	height: 550px;
 	width: 980px;
 	display: none;
@@ -287,42 +257,42 @@ nav {
 }
 
 
-.level16 {
+.level6 {
 	height: 580px;
 	width: 980px;
 	position: absolute;
-	top: 580px;
+	top: 578px;
 	z-index: -1;
 }
 
-.level16m {
+.level6m {
 	height: 580px;
 	width: 980px;
 	display: none;
 }
 
 .level162 {
-	top: 1680px;
+	top: 1660px;
 }
 
 .level163 {
-	top: 2780px;
+	top: 2742px;
 }
 
 .level164 {
-	top: 3880px;
+	top: 3824px;
 }
 
 .level165 {
-	top: 4980px;
+	top: 4906px;
 }
 
 .level166 {
-	top: 6080px;
+	top: 5988px;
 }
 
 .level167 {
-	top: 7180px;
+	top: 7070px;
 }
 
 .line2 {
@@ -350,32 +320,9 @@ nav {
 	left: 438px;
 }
 
-.rotateblock2 {
-	top: 200px;
-}
-
-.rotateblock3 {
-	top: 330px;
-}
-
-.rotateblock4 {
-	top: 460px;
-}
-
-.rotateblock5 {
-	top: 590px;
-}
-
-.rotateblock6 {
-	top: 720px;
-}
-
-.rotateblock7 {
-	top: 850px;
-}
 
 .rotateblock8 {
-	top: 60px;
+	top: 50px;
 }
 
 .side {
