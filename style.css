@@ -14,6 +14,7 @@ a {
 	font-weight: bold;
 	line-height: 50px;
 	color: rgba(0,255,0,0.8);
+	text-decoration: none;
 }
 
 nav {
@@ -172,12 +173,19 @@ nav {
 	background-color: green;
 	background-image:
     linear-gradient(-45deg, rgb(0,75,0), black);
+    cursor: pointer;
+    text-decoration: none;
 
 }
 
 .smallbox:hover .smalltextbox {
     color: gold;
    	font-weight: normal;
+   	text-decoration: none;
+}
+
+.smallbox a {
+   	text-decoration: none;
 }
 
 .smalltextbox {
@@ -240,7 +248,7 @@ nav {
 
 }
 
-.level5m {
+.level15m {
 	height: 550px;
 	width: 980px;
 	display: none;
